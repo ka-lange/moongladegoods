@@ -1,16 +1,33 @@
-
+body{
+    font-family: "montserrat", sans-serif;
+}
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    background-color: white;
+    margin: 50px 0;
+}
+header img{
+    width: 150px;
 }
 header nav a {
-    margin: 0 2px;
-    font-size: 15px;
-    text-decoration: none;
+    margin: 0 4px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #8BBCCC;
+}
+.sectionHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0 0 0;
+    color: #2a1b3d;
+}
+.sectionHeading img{
+    width: 200px;
+    
 }
 .menuButt{
     display:none;
@@ -28,11 +45,14 @@ main{
     flex-direction: column;
     padding: 50px;
     color: white;
-    background-color: rgba(146,125,124,255);
-    background-size: 6000px;
+    background: url("images/mainbgraphic.png");
+    background-size: cover;
+    background-position: bottom;
 }
 .mainbox{
-    background-color: black;
+    background-color: rgb(29, 29, 29);
+    border: 5px solid #8BBCCC;
+    border-radius: 5px;
     color: white;
     width: 200px;
     height: 250px;
@@ -40,80 +60,114 @@ main{
     padding: 50px;
 }
 
-.services{
+.ourQualities{
     display: flex;
-    justify-content: center;
-    height: 300px;
+    justify-content: space-evenly;
+    margin: 0 0 25px 0;
     background-color: white;
     padding-top: 50px;
 }
-.servicesection{
+.quality{
     width: 200px;
     padding: 15px;
     text-align: center;
+    color: #2a1b3d;
 }
-.servicesection h3{
-    font-size: 15px;
+.quality h3{
+    font-size: 25px;
+}
+.quality img{
+    height: 100px;
+    width: 100px;
 }
 .fillerimagewide{
     width: 300px;
     height: 250px;
     background-color: grey;
+    border: 5px solid #8BBCCC;
+    border-radius: 5px;
 }
 .momentum {
     display: flex;
     padding: 50px;
-    background-color: lightgrey;
+    background-color: rgb(29, 29, 29);
+    color: #8BBCCC;
 }
 .momentum>section{
     padding-right:10px;
 }
+.fitImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .fillerimagetall{
-    width: 200px;
+    width: 300px;
     height:300px;
     background-color: gray;
 }
-.stylists{
+.fillerimagetall img{
+    man-width: 100%;
+    max-height: 100%;
+    border: 5px solid #2a1b3d;
+    border-radius: 5px;
+}
+.products{
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
 }
 .stylisttitle{
-    background-color: black;
+    background-color: #6237a1;
+    border: 5px solid #2a1b3d;
     color:white;
-    text-align: center;
-    transform: translate(10px, -40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 15px 0;
+    transform: translate(60px, -40px);
     width: 180px;
-    font-size: 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
 }
 .offer{
-    background-color: grey;
+    background-color: #8BBCCC;
     margin: 0 auto;
     width: 500px;
     padding: 50px;
+    color: #2a1b3d;
 }
 .lookbooktitle{
     text-align: center;
     text-decoration: underline;
 }
 .fillerimageskinny {
-    width: 150px;
-    height: 300px;
+    width: 200px;
+    height: 450px;
     margin: 10px;
     background-color: grey;
 }
 .fillerimagesquare {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 10px;
     background-color: grey;
 }
 .lookbook{
     display: flex;
     justify-content: center;
+    background: linear-gradient(to bottom, #6237a1, #2a1b3d);
+}
+.shopButton{
+    background-color: #6237a1;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
 }
 
-a:link { text-decoration: none; color: black}
+a:link { text-decoration: none;}
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
@@ -142,3 +196,4 @@ a:active { text-decoration: none; }
         display:block;
     }
 }
+
