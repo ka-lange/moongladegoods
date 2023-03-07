@@ -1,0 +1,144 @@
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+}
+header nav a {
+    margin: 0 2px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.menuButt{
+    display:none;
+}
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color:#333;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    color: white;
+    background-color: rgba(146,125,124,255);
+    background-size: 6000px;
+}
+.mainbox{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 250px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color: white;
+    padding-top: 50px;
+}
+.servicesection{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+}
+.servicesection h3{
+    font-size: 15px;
+}
+.fillerimagewide{
+    width: 300px;
+    height: 250px;
+    background-color: grey;
+}
+.momentum {
+    display: flex;
+    padding: 50px;
+    background-color: lightgrey;
+}
+.momentum>section{
+    padding-right:10px;
+}
+.fillerimagetall{
+    width: 200px;
+    height:300px;
+    background-color: gray;
+}
+.stylists{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.stylisttitle{
+    background-color: black;
+    color:white;
+    text-align: center;
+    transform: translate(10px, -40px);
+    width: 180px;
+    font-size: 12px;
+}
+.offer{
+    background-color: grey;
+    margin: 0 auto;
+    width: 500px;
+    padding: 50px;
+}
+.lookbooktitle{
+    text-align: center;
+    text-decoration: underline;
+}
+.fillerimageskinny {
+    width: 150px;
+    height: 300px;
+    margin: 10px;
+    background-color: grey;
+}
+.fillerimagesquare {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: grey;
+}
+.lookbook{
+    display: flex;
+    justify-content: center;
+}
+
+a:link { text-decoration: none; color: black}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.mainbox a{
+    color:aliceblue;
+}
+
+@media screen and (max-width: 600px){
+    .services{
+        flex-wrap:wrap;
+        height:500px;
+    }
+    .momentum{
+        flex-direction: column;
+        align-items: center;
+    }
+    .stylists{
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav{
+        display: none;
+    }
+    .menuButt{
+        display:block;
+    }
+}
